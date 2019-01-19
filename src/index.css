@@ -1,22 +1,19 @@
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: url("/img/background.jpg");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: raleway;
+  background: url(./img/background.jpg);
+  background-size: 100%;
+  background-position: bottom;
+  min-height: 100%;
 }
 
 form {
   padding: 20px;
-  padding-bottom: 5px;
   margin-top: 60px;
 }
 
@@ -24,16 +21,23 @@ form button,
 form h5 {
   margin: 20px 0;
 }
+.auth-container {
+  width: 40%;
+  min-width: 360px;
+}
 
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="email"]:not(.browser-default):focus:not([readonly]),
 input[type="password"]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-color: #009688;
+  border-color: #ec407a;
   border-width: 2px;
   box-shadow: none;
 }
-.input-container {
-  width: 40%;
-  min-width: 350px;
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #ec407a !important;
 }
