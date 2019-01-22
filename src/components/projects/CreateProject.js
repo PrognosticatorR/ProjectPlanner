@@ -15,6 +15,7 @@ class CreateProject extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
+    // console.log(this.state);
     this.props.createProject(this.state);
     this.props.history.push("/");
   };
@@ -22,7 +23,7 @@ class CreateProject extends Component {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to="/signin" />;
     return (
-      <div className="container">
+      <div className="container card-component">
         <form className="white" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">Create a New Project</h5>
           <div className="input-field">
