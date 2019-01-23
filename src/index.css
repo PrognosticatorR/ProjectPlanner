@@ -44,5 +44,11 @@ input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
 }
 
 .card-component {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.auth-container {
+  width: 40%;
+  min-width: 360px;
+  margin-bottom: 30px;
 }
